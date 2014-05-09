@@ -26,3 +26,8 @@ wheel:
     - present
     - system: True
 
+#can sudo
+sudo:
+  group:
+    - present
+    - system: True
