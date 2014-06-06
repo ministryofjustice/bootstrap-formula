@@ -36,6 +36,13 @@ mg:
   pkg:
     - installed
 
+curl:
+  pkg:
+    - installed
+
+tmux:
+  pkg:
+    - installed
 
 bootstrap_pkgs:
   pkg:
