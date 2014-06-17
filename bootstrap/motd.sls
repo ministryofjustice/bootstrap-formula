@@ -1,6 +1,5 @@
-touch /etc/motd:
-  cmd.run:
-    - creates: /etc/motd
+/etc/motd:
+  file.touch
 
 motd_quote:
   file.append:
