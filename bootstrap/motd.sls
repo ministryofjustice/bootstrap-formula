@@ -1,3 +1,6 @@
+/etc/motd:
+  file.touch
+
 motd_quote:
   file.append:
     - name: /etc/motd
