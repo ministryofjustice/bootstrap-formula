@@ -4,3 +4,4 @@ include:
   - .sudo
   - .packages
   - .syslog
+  - .policy-rc
