@@ -12,9 +12,8 @@ Instead of:
 - install & start
 - configure
 - initialize
-- stop
-- fix pid
-- stop
+- try to stop
+- kill it
 - start
 - remove data from 1st start
 
