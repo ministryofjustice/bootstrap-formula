@@ -19,10 +19,10 @@ Instead of:
 
 
 Formula allows to whitelist specific services by simply creating an empty file like:
-touch /etc/policy-rc.d/whitelist/sshd
+touch /etc/policy-rc.d/whitelist/ssh
 
 Or in more salt way
-/etc/policy-rc.d/whitelist/sshd:
+/etc/policy-rc.d/whitelist/ssh:
   file.managed:
     - makedirs: True
 
@@ -45,4 +45,12 @@ policyrcd-script-zg2:
   file.directory:
     - mode: 755
     - makedirs: True
+    - order: 0
+
+
+/etc/policy-rc.d/whitelist/ssh:
+  file.managed:
+    - makedirs: True
+    - require:
+      - file: /etc/policy-rc.d/whitelist
     - order: 0
