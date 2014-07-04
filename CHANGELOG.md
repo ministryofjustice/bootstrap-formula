@@ -1,4 +1,4 @@
-## Version 2.x.x
+## Version 2.0.0
 
 * Added policy-rc blocking all services from auto starting when installing a
   package. As we are already fully managing daemons status through salt and we
