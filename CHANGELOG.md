@@ -1,3 +1,7 @@
+## Version x.y.z
+
+* Reduce swapping: vm.swappiness
+
 ## Version 2.0.0
 
 * Added policy-rc blocking all services from auto starting when installing a

@@ -5,3 +5,4 @@ include:
   - .packages
   - .syslog
   - .policy-rc
+  - .sysctl
