@@ -1,6 +1,7 @@
-## Version x.y.z
+## Version 2.1.0
 
-* Reduce swapping: vm.swappiness
+* Reduce swapping: vm.swappiness = 1. This should discourage Linux from
+  swapping, but still allow it to happen
 
 ## Version 2.0.0
 
