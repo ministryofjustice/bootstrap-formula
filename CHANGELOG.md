@@ -1,3 +1,8 @@
+## Version 3.0.0
+
+* Upgrade GRUB to grub-pc (v2), since GRUBv1 on vCD templates was in error
+* Permit upgrade of kernel -- encourage by default, set grain 'lock_kernel_version' to postpone.
+
 ## Version 2.1.0
 
 * Reduce swapping: vm.swappiness = 1. This should discourage Linux from

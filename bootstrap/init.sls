@@ -1,4 +1,6 @@
 include:
+  - .grub
+  - .kernel_version
   - .directories
   - .groups
   - .sudo

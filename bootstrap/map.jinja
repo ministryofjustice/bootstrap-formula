@@ -1,0 +1,29 @@
+{% set bootstrap = salt['grains.filter_by']({
+
+    'Ubuntu-12.04': {
+       'upgrade_grub': True,
+       'grub_install_device': '/dev/sda',
+       'kernel': {
+         'meta_package': 'linux-generic-lts-trusty',
+         'version': '3.13.0.43.37'
+       }
+    },
+
+    'Ubuntu-14.04': {
+       'upgrade_grub': True,
+       'grub_install_device': '/dev/sda',
+       'kernel': {
+         'meta_package': 'linux-generic',
+         'version': '3.13.0.43.50'
+       }
+    },
+
+    'Unknown': {
+       'upgrade_grub': False,
+       'kernel': {
+         'version': None
+       }
+    }
+
+}, grain='osfinger', merge=salt['pillar.get']('bootstrap',{}), default='Unknown') %}
+
