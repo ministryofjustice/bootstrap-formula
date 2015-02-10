@@ -6,3 +6,4 @@ include:
   - .syslog
   - .policy-rc
   - .sysctl
+  - .grub
