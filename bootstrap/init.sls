@@ -1,5 +1,6 @@
 include:
   - .directories
+  - .locale
   - .groups
   - .sudo
   - .packages
