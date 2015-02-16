@@ -1,3 +1,12 @@
+## Version 2.1.1
+
+* Add recipe that updates locales and "/etc/default/locale". This was moved
+  out of application-centric Salt recipes, where having such thing is a bad
+  idea inherently.
+
+* Add recipe that provides "/etc/grub.conf" symbolic link. This was moved
+  out of application-centric Salt recipes.
+
 ## Version 2.1.0
 
 * Reduce swapping: vm.swappiness = 1. This should discourage Linux from
