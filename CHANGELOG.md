@@ -1,3 +1,7 @@
+## Version 2.1.2
+
+* Fix. Make locales generation idempotent.
+
 ## Version 2.1.1
 
 * Add recipe that updates locales and "/etc/default/locale". This was moved
