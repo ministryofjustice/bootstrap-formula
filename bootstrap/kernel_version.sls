@@ -1,5 +1,6 @@
 {% from "bootstrap/map.jinja" import bootstrap with context %}
-{% if salt['grains.get']("virtual") != 'xen' %}
+{# See grub.sls for more info on what this outer loop if is for #}
+{% if not(salt['grains.get']('virtual') == 'xen' and salt['grains.get']('productname', '') != 'HVM domU') %}
 {%   if not salt['grains.get']("lock_kernel_version") or salt['grains.get']("lock_kernel_version") == False %}
 include:
   - .grub

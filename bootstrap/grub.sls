@@ -1,6 +1,14 @@
 {% from "bootstrap/map.jinja" import bootstrap with context %}
-{% if salt['grains.get']('virtual') == 'xen' %}
-# we do not support updating grub on AWS
+{#
+When on AWS if we are using paravirtualization ("PV") we can't change the
+kernel easily, but on HVM you can.
+
+To tell the difference between AWS paravirtualization and hardware
+virtualization we look at the productname grain (and be restrictive about it,
+so this only happens where we expect it to)
+#}
+{% if salt['grains.get']('virtual') == 'xen' and salt['grains.get']('productname', '') != 'HVM domU' %}
+# we do not support updating grub on AWS PV
 {% else %}
 {%   if bootstrap.upgrade_grub %}
 # upgrade grub if we are not using grub-pc
