@@ -1,4 +1,8 @@
-## Version 3.x.0 (unreleased)
+## Version 3.0.1
+
+* Bug fix syntax error in previous release's map.jinja file
+
+## Version 3.0.0
 
 * Upgrade GRUB to grub-pc (v2), since GRUBv1 on vCD templates was in error
 * Permit upgrade of kernel -- encourage by default, set grain 'lock_kernel_version' to postpone.
