@@ -1,3 +1,7 @@
+## Version 3.0.2 (unreleased)
+
+* Fix default value for grub_install_device in map.jinja
+
 ## Version 3.0.1
 
 * Bug fix syntax error in previous release's map.jinja file
