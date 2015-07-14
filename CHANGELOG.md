@@ -1,3 +1,7 @@
+## Version 3.0.3
+
+* Bump the default kernel versions for ubuntu
+
 ## Version 3.0.2
 
 * Fix default value for grub_install_device in map.jinja
