@@ -1,3 +1,7 @@
+## Version 3.0.4
+
+* Update the default kernel versions for ubuntu 3.13.0.58.65
+
 ## Version 3.0.3
 
 * Bump the default kernel versions for ubuntu
