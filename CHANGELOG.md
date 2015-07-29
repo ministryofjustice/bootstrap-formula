@@ -1,3 +1,7 @@
+## UNRELEASED
+
+* Default the kernel version to the latest available
+
 ## Version 3.0.4
 
 * Update the default kernel versions for ubuntu 3.13.0.58.65
