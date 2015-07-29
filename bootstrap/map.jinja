@@ -5,7 +5,7 @@
        'grub_install_device': '/dev/' + (salt['grains.get']('SSDs:0') or 'sda'),
        'kernel': {
          'meta_package': 'linux-image-generic-lts-trusty',
-         'version': '3.13.0.58.50'
+         'version': (salt['pkg.latest_version]('linux-image-generic-lts-trusty')) 
        }
     },
 
@@ -14,7 +14,7 @@
        'grub_install_device': '/dev/' + (salt['grains.get']('SSDs:0') or 'sda'),
        'kernel': {
          'meta_package': 'linux-image-generic',
-         'version': '3.13.0.58.65'
+         'version': (salt['pkg.latest_version]('linux-image-generic')) 
        }
     },
 
