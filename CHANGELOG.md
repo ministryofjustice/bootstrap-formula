@@ -1,4 +1,4 @@
-## UNRELEASED
+## Version 3.0.5
 
 * Default the kernel version to the latest available
 
